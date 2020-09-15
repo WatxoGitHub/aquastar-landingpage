@@ -1,5 +1,5 @@
 <?php 
-/* $name       = @trim(stripslashes($_POST['name'])); 
+$name       = @trim(stripslashes($_POST['name'])); 
 $from       = @trim(stripslashes($_POST['email'])); 
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $message    = @trim(stripslashes($_POST['message'])); 
@@ -12,11 +12,11 @@ $headers[] = "Reply-To: <{$from}>";
 $headers[] = "Subject: {$subject}";
 $headers[] = "X-Mailer: PHP/".phpversion();
 
-mail($to, $subject, $message, $headers); */
+mail($to, $subject, $message, $headers);
 
-// die;
+ die;
 
-$name       = $_POST['name']; 
+/* $name       = $_POST['name']; 
 $from       = $_POST['email']; 
 $subject    = $_POST['company']; 
 $message    = $_POST['message']; 
@@ -31,6 +31,5 @@ $headers = "MIME-Version: 1.0";
 $headers .= "Content-type: text/plain; charset=iso-8859-1";
 $headers .= "X-Mailer: PHP/".phpversion();
 
-mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers); */
 
-?>
